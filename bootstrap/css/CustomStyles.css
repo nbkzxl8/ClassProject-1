@@ -68,3 +68,9 @@
     background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
     url(../images/traffic2.jpg);
 }
+.site-footer {
+    background-color: goldenrod;
+    color: whitesmoke;
+    margin-top: 30px;
+    padding-left: 30px;
+}
