@@ -95,29 +95,91 @@
 <a href='#top'>Back to top</a>
 
 <div class="container">
-    <form action="response.htm" method="GET">
-  
+    <form action="response.html" method="GET">
+  <div>
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+      <input type="text" id="fname" name="firstname" placeholder="Your first name.." required> 
+  </div>
+      <div><label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    </div>
+
+<div>
+    <label for="victim">Are you the victim, or acting on behalf of a friend/family member?</label>
+    <select id="victim" name="victim">
+    <option value="victim">I am the victim</option>
+    <option value="family">I am a family member of the victim</option>
+    <option value="friend">I am a friend of the victim</option>
+</select>
+</div>
+
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="16" max="200">
+    </div>
+
+<div>
   
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="county">County</label>
+    <label for="phone">What's the best number to reach you?</label>
+    <input type="tel" name="phone" id="phone">
+</div>
+
+
+  <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required>
+    </div>
+
+    <div>
+      <label for="county">County of residence</label>
       <select id="county" name="County">
         <option value="saintlouiscounty">Saint Louis County</option>
         <option value="city">Saint Louis City</option>
         <option value="stcharles">Saint Charles County</option>
         <option value="franklin">Franklin County</option>
         <option value="jefferson">Jefferson County</option>
-
-
+      
       </select>
-  
-      <label for="subject">Tell us what happened:</label>
+
+<div>
+    <label for="date">Date of accident</label>
+    <input type="date" name="date" id="date">
+</div>
+
+  </div>
+What was the extent of the injury? Check any that apply:
+<div>
+    <label for=doctor>Required Doctor visit</label>
+    <input type="checkbox" name="doctor" id="doctor">
+</div>
+
+
+<div>
+    <label for="hospital">Hospitalization</label>
+    <input type="checkbox" name="hospital" id="hospital">
+</div>
+
+<div>
+    <label for=death>Death</label>
+    <input type="checkbox" name="death" id="death">
+</div>
+
+<div>
+    <label for=other>Other</label>
+    <input type="checkbox" name="other" id="other">
+</div>
+
+
+
+  <div>
+      <label for="subject">Tell us what happened:</label><br>
       <textarea id="subject" name="subject" placeholder="What happened?" style="height:200px"></textarea>
-  
-      <button type="submit"</button><input type="submit" value="Submit">
+    </div>
+
+<div></div>
+
+  <button type="reset">Reset Form</button>
+      <button type="submit">Submit</button>
   
     </form>
   </div>
