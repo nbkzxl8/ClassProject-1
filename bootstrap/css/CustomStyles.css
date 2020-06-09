@@ -1,3 +1,6 @@
+body {
+    background: url(../images/grey.jpg);
+}
 
 }.customDiv {
     margin: 3px;
@@ -5,12 +8,12 @@
     background-color: silver;
     text-align: center;
     font-size: large
-    color: whitesmoke;
 }
 .xop-section {
     max-width: 960px;
     margin: 0 auto;
     padding: 6% 2%;
+
 }
 
 .xop-grid {
