@@ -102,6 +102,7 @@
 </div>
 
 <div class="container">
+  <fieldset><legend>Personal Information</legend>
     <form action="response.html" method="GET">
   <div>
       <label for="fname">First Name</label>
@@ -111,14 +112,7 @@
       <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
     </div>
 
-<div>
-    <label for="victim">Are you the victim, or acting on behalf of a friend/family member?</label>
-    <select id="victim" name="victim">
-    <option value="victim">I am the victim</option>
-    <option value="family">I am a family member of the victim</option>
-    <option value="friend">I am a friend of the victim</option>
-</select>
-</div>
+
 
     <div>
         <label for="age">Age</label>
@@ -147,7 +141,9 @@
         <option value="jefferson">Jefferson County</option>
       
       </select>
-
+</fieldset>
+<br>
+<fieldset><legend>Accident Information</legend>
 <div>
     <label for="date">Date of accident</label>
     <input type="date" name="date" id="date">
@@ -188,7 +184,7 @@ What was the extent of the injury? Check any that apply:
     </div>
 
 <div></div>
-
+</fieldset>
   <button type="reset">Reset Form</button>
       <button type="submit">Submit</button>
   
